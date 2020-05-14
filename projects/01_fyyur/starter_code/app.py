@@ -2,7 +2,6 @@
 # Imports
 #----------------------------------------------------------------------------#
 
-
 import dateutil.parser
 import babel
 from flask import Flask, render_template, request, Response, flash, redirect, url_for, jsonify
@@ -34,7 +33,6 @@ migrate = Migrate(app, db)
 #----------------------------------------------------------------------------#
 
 # Venue model
-
 
 class Venue(db.Model):
     __tablename__ = 'Venue'
