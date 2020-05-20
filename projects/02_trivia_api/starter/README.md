@@ -42,3 +42,7 @@ The `./frontend` directory contains a complete React frontend to consume the dat
 Pay special attention to what data the frontend is expecting from each API response to help guide how you format your API. 
 
 [View the README.md within ./frontend for more details.](./frontend/README.md)
+
+# Key Points
+1) Execute the virtualenv venv command in starter folder and install dependencies there
+2) Execute npm install and npm start in ./frontend/src folder  
