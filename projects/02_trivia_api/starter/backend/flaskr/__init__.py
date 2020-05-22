@@ -24,29 +24,14 @@ def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__)
     setup_db(app)
-
-    '''
-    Set up CORS. Allow '*' for origins. Delete the sample route after completing the TODOs
-    '''
     CORS(app)
 
-    '''
-    Use the after_request decorator to set Access-Control-Allow
-    '''
+
     @app.after_request
     def after_request(response):
         response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization,true')
         response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
         return response
-
-    '''
-    GET /categories
-    Endpoint to handle GET requests for all available categories.
-    Response:
-        - list of categories
-        - success value
-        - total number of categories
-    '''
 
     @app.route('/categories')
     def retrieve_categories():
@@ -60,17 +45,7 @@ def create_app(test_config=None):
             'categories': {category.id: category.type for category in categories}
         })
 
-    '''
-    GET /questions
-    Endpoint to handle GET requests for questions, including pagination (every 10 questions). 
 
-    Response:
-        - list of categories
-        - current category (always None)
-        - list of questions
-        - success value
-        - total number of questions
-    '''
 
     @app.route('/questions')
     def retrieve_questions():
@@ -90,18 +65,7 @@ def create_app(test_config=None):
             'current_category': None
         })
 
-    '''
-    DELETE /questions/<int:question_id>
 
-    Endpoint to DELETE question using a question ID.
-    Response:
-        - list of categories
-        - current category (always None)
-        - deleted question id
-        - list of questions
-        - success value
-        - total number of questions
-    '''
 
     @app.route("/questions/<question_id>", methods=['DELETE'])
     def delete_question(question_id):
@@ -115,23 +79,7 @@ def create_app(test_config=None):
         except:
             abort(422)
 
-    '''
-    POST /questions
-    Endpoint to POST a new question. 
 
-    Request:
-        - question text
-        - answer text
-        - category
-        - difficulty score.
-    Response:
-        - list of categories
-        - created question id
-        - current category
-        - list of questions
-        - success value
-        - total number of questions
-    '''
 
     @app.route("/questions", methods=['POST'])
     def add_question():
@@ -157,43 +105,26 @@ def create_app(test_config=None):
         except:
             abort(422)
 
-    '''
-    Endpoint to get questions based on a search term ( search term is the substring of the question ).
-    Returns:
-        - current category (always None)
-        - list of categories
-        - list of questions
-        - success value
-        - total number of questions
-    '''
-
     @app.route('/questions/search', methods=['POST'])
     def search_questions():
         body = request.get_json()
         search_term = body.get('searchTerm', None)
 
-        if search_term:
-            search_results = Question.query.filter(
-                Question.question.ilike(f'%{search_term}%')).all()
+        try:
+            if search_term:
+                search_results = Question.query.filter(
+                    Question.question.ilike(f'%{search_term}%')).all()
 
-            return jsonify({
-                'success': True,
-                'questions': [question.format() for question in search_results],
-                'total_questions': len(search_results),
-                'current_category': None
-            })
-        abort(404)
+                return jsonify({
+                    'success': True,
+                    'questions': [question.format() for question in search_results],
+                    'total_questions': len(search_results),
+                    'current_category': None
+                })
 
-    '''
-    GET categories/<int:category_id>/questions
-    Endpoint to get questions based on category.
+        except:
+            abort(404)
 
-    Response:
-        - current category
-        - list of questions
-        - success value
-        - total number of questions
-    '''
 
     @app.route('/categories/<int:category_id>/questions', methods=['GET'])
     def retrieve_questions_by_category(category_id):
@@ -211,17 +142,6 @@ def create_app(test_config=None):
         except:
             abort(404)
 
-    '''
-    POST /quizzes
-    Endpoint to get questions to play the quiz.
-    Request:
-        - list of previous question ids, list can be empty while starting the game
-        - quiz category
-    Response:
-        - previousQuestions
-        - a random question (that is not one of the previous questions)
-        - success value
-    '''
 
     @app.route('/quizzes', methods=['POST'])
     def play_quiz():
@@ -247,6 +167,7 @@ def create_app(test_config=None):
                 'success': True,
                 'question': new_question
             })
+
         except:
             abort(422)
 
