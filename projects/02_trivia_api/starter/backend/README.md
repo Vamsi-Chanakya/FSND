@@ -82,6 +82,7 @@ POST '/quizzes'
 - Request Arguments: None
 - Returns: An object with a single key, categories, that contains a object of id: category_string key:value pairs. 
 
+```bash
 {
   "categories": {
     "1": "Science", 
@@ -93,9 +94,11 @@ POST '/quizzes'
   }, 
   "success": true
 }
+```
 
 ##GET '/questions'
 
+```bash
 {
   "categories": {
     "1": "Science", 
@@ -126,12 +129,15 @@ POST '/quizzes'
   "message": "resource not found", 
   "success": false
 }
+```
 
 ##DELETE '/questions/int:question_id'
 
 - Delete a question with specified id
 - Request Arguments: question_id, the id of the question to delete
 - Returns success message on success
+
+```bash
 {
   "deleted": "12",
   "success": true
@@ -142,6 +148,7 @@ POST '/quizzes'
     "error": 422,
     "message": "unprocessable"
 }
+```
 
 
 ##POST '/questions'
@@ -149,6 +156,7 @@ POST '/quizzes'
 - Creates a new questiion
 - Request Body: question to be created
 
+```bash
 curl -X POST -H "Content-Type: application/json" -d '
 {"answer": "Vamsi Chanakya", "category": "4", "difficulty": "2", "question": "What is my full name ?"}
 ' http://127.0.0.1:5000/questions
@@ -166,6 +174,7 @@ curl -X POST -H "Content-Type: application/json" -d '
   "message": "unprocessable",
   "success": false
 }
+```
 
 ##POST '/questions/search'
 
@@ -174,6 +183,7 @@ curl -X POST -H "Content-Type: application/json" -d '
 {"searchTerm": "search term"}
 - Returns success message on success
 
+```bash
 curl -X POST -H "Content-Type: application/json" -d '{"searchTerm": "What is my full name"}' http://127.0.0.1:5000/questions/search
 {
   "current_category": null,
@@ -189,12 +199,15 @@ curl -X POST -H "Content-Type: application/json" -d '{"searchTerm": "What is my 
   "success": true,
   "total_questions": 1
 }
+```
 
 
 ##GET '/categories/<ind: category_id>/questions'
 
 - Get questions of specified category id
 - Returns a list of questions od the specified category
+
+```bash
 {
   "current_category": 5,
   "questions": [
@@ -216,7 +229,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"searchTerm": "What is my 
   "success": true,
   "total_questions": 4
 }
-
+```
 
 ##POST '/quizzes'
 
@@ -224,6 +237,8 @@ curl -X POST -H "Content-Type: application/json" -d '{"searchTerm": "What is my 
  - Request Body: 
     - previous_questions contains a list of ids for previously attempted questions
     - quiz_category contains the id of the question category for the quiz
+
+```bash
     {
         "previous_questions": [],
         "quiz_category": {  "id": "1"}
@@ -246,11 +261,12 @@ curl -X POST -H "Content-Type: application/json" -d '{"searchTerm": "What is my 
   "message": "unprocessable",
   "success": false
 }
+```
 
 ## Testing
 To run the tests, run
 
-```
+```bash
 dropdb trivia_test
 createdb trivia_test
 psql trivia_test < trivia.psql
