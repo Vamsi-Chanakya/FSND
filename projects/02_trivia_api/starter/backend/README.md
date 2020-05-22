@@ -212,7 +212,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"searchTerm": "What is my 
   "current_category": 5,
   "questions": [
     {
-      **"answer": "Apollo 13",
+      "answer": "Apollo 13",
       "category": 5,
       "difficulty": 4,
       "id": 2,
