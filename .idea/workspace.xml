@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdc7131f-9583-4a06-9429-f37d79443f67" name="Default Changelist" comment="Udacity Nano Degree - FullStack Web Developer - Updated review comments">
-      <change afterPath="$PROJECT_DIR$/BasicFlaskAuth/Cryptography.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BasicFlaskAuth/auth_Headers_Flask.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BasicFlaskAuth/jwt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BasicFlaskAuth/rainbow_Tables.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BasicFlaskAuth/validating_Tokens.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskRecap/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskRecap/database.db" afterDir="false" />
+    <list default="true" id="bdc7131f-9583-4a06-9429-f37d79443f67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicFlaskAuth/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicFlaskAuth/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/02_trivia_api/starter/backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/projects/02_trivia_api/starter/backend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/auth/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/database/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/database/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/frontend/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +35,8 @@
           <entry key="gitignore" value="3" />
           <entry key="json" value="54" />
           <entry key="md" value="330" />
-          <entry key="py" value="2782" />
+          <entry key="py" value="2788" />
+          <entry key="ts" value="3" />
           <entry key="txt" value="90" />
         </counts>
       </usages-collector>
@@ -48,25 +44,26 @@
         <counts>
           <entry key="JSON" value="54" />
           <entry key="Markdown" value="330" />
-          <entry key="PLAIN_TEXT" value="95" />
-          <entry key="Python" value="2820" />
+          <entry key="PLAIN_TEXT" value="98" />
+          <entry key="Python" value="2826" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Pipfile" value="1" />
           <entry key="css" value="1" />
-          <entry key="gitignore" value="5" />
+          <entry key="gitignore" value="7" />
           <entry key="html" value="15" />
           <entry key="js" value="29" />
-          <entry key="json" value="8" />
+          <entry key="json" value="9" />
           <entry key="lock" value="1" />
           <entry key="log" value="1" />
-          <entry key="md" value="13" />
+          <entry key="md" value="14" />
           <entry key="psql" value="2" />
-          <entry key="py" value="77" />
+          <entry key="py" value="81" />
           <entry key="svg" value="3" />
-          <entry key="txt" value="12" />
+          <entry key="ts" value="4" />
+          <entry key="txt" value="13" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
@@ -74,11 +71,11 @@
         <counts>
           <entry key="CSS" value="1" />
           <entry key="HTML" value="15" />
-          <entry key="JSON" value="8" />
+          <entry key="JSON" value="9" />
           <entry key="JavaScript" value="29" />
-          <entry key="Markdown" value="13" />
-          <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="77" />
+          <entry key="Markdown" value="14" />
+          <entry key="PLAIN_TEXT" value="29" />
+          <entry key="Python" value="81" />
           <entry key="SVG" value="3" />
           <entry key="YAML" value="2" />
         </counts>
@@ -86,34 +83,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicFlaskAuth/rainbow_Tables.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BasicFlaskAuth/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicFlaskAuth/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -124,8 +94,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>db.create</find>
-      <find>venues/create</find>
       <find>new_venue</find>
       <find>genres</find>
       <find>migrate</find>
@@ -154,6 +122,8 @@
       <find>jwt</find>
       <find>AUTH0_DOMAIN</find>
       <find>API_AUDIENCE</find>
+      <find>verify_decode_jwt(token):</find>
+      <find>todo</find>
     </findStrings>
     <replaceStrings>
       <replace>Venue</replace>
@@ -171,6 +141,8 @@
       <dir>$PROJECT_DIR$/projects/02_trivia_api/starter/backend</dir>
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/projects/02_trivia_api</dir>
+      <dir>$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend</dir>
+      <dir>$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/frontend</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -209,6 +181,9 @@
         <option value="$PROJECT_DIR$/BasicFlaskAuth/Cryptography.py" />
         <option value="$PROJECT_DIR$/BasicFlaskAuth/rainbow_Tables.py" />
         <option value="$PROJECT_DIR$/BasicFlaskAuth/app.py" />
+        <option value="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/auth/auth.py" />
+        <option value="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/api.py" />
+        <option value="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/frontend/src/environments/environment.ts" />
       </list>
     </option>
   </component>
@@ -248,12 +223,84 @@
             <path>
               <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
               <item name="FSND" type="462c0819:PsiDirectoryNode" />
-              <item name="BasicFlaskAuth" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
               <item name="FSND" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSND" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
+              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSND" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
+              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSND" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
+              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSND" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
+              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSND" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
+              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSND" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
+              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSND" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
+              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSND" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
+              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -390,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590122805140</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Udacity Nano Degree - FullStack Web Developer - Updated review comments">
+      <created>1590371403381</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1590371403381</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -404,9 +458,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21489105" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2584746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -439,52 +492,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Udacity Nano Degree - FullStack Web Developer - Updated review comments" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/01_fyyur/starter_code/templates/pages/show_venue.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/01_fyyur/starter_code/templates/forms/new_show.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/01_fyyur/starter_code/templates/forms/new_artist.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/01_fyyur/starter_code/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1683">
-          <caret line="92" column="10" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/01_fyyur/starter_code/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/01_fyyur/starter_code/models.py" />
-    <entry file="file://$PROJECT_DIR$/projects/01_fyyur/starter_code/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Alchemy Test/flask_hello_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/01_fyyur/starter_code/templates/forms/new_venue.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/flask_setup_example/flaskr/venv/pyvenv.cfg" />
     <entry file="file://$PROJECT_DIR$/FlaskRecap/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -687,11 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/udacity-fsnd-udaspicelatte.postman_collection.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1291" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FlaskRecap/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -738,16 +740,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BasicFlaskAuth/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/BasicFlaskAuth/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicFlaskAuth/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/udacity-fsnd-udaspicelatte.postman_collection.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/auth/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="110" column="29" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/frontend/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/frontend/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/frontend/src/app/app.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
         </state>
       </provider>
     </entry>
