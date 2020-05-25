@@ -1,60 +1,41 @@
-from flask import Flask, request, abort
+# Install a pip package in the current Jupyter kernel
+import sys
+!{sys.executable} -m pip install python-jose
+
 import json
-from functools import wraps
 from jose import jwt
 from urllib.request import urlopen
 
-
-app = Flask(__name__)
-
+# Configuration
+# UPDATE THIS TO REFLECT YOUR AUTH0 ACCOUNT
 AUTH0_DOMAIN = 'vamsichanakya.auth0.com'
 ALGORITHMS = ['RS256']
-API_AUDIENCE = 'Image'
+API_AUDIENCE = 'vamsi'
 
-
+'''
+AuthError Exception
+A standardized way to communicate auth failure modes
+'''
 class AuthError(Exception):
     def __init__(self, error, status_code):
         self.error = error
         self.status_code = status_code
 
-
-def get_token_auth_header():
-    """Obtains the Access Token from the Authorization Header
-    """
-    auth = request.headers.get('Authorization', None)
-    if not auth:
-        raise AuthError({
-            'code': 'authorization_header_missing',
-            'description': 'Authorization header is expected.'
-        }, 401)
-
-    parts = auth.split()
-    if parts[0].lower() != 'bearer':
-        raise AuthError({
-            'code': 'invalid_header',
-            'description': 'Authorization header must start with "Bearer".'
-        }, 401)
-
-    elif len(parts) == 1:
-        raise AuthError({
-            'code': 'invalid_header',
-            'description': 'Token not found.'
-        }, 401)
-
-    elif len(parts) > 2:
-        raise AuthError({
-            'code': 'invalid_header',
-            'description': 'Authorization header must be bearer token.'
-        }, 401)
-
-    token = parts[1]
-    return token
+# PASTE YOUR OWN TOKEN HERE
+# MAKE SURE THIS IS A VALID AUTH0 TOKEN FROM THE LOGIN FLOW
+token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik56Z3lSVFZEUmpKQ1FrUkJSRGN3TjBReFJUQTFPVUl5UlRORk9EQXhPVGMwTmpjNU9USkVPQSJ9.eyJpc3MiOiJodHRwczovL2ZzbmQuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVkMDNkM2U2NzI2YjhmMGNiNGJmNzFjOSIsImF1ZCI6ImltYWdlIiwiaWF0IjoxNTYwNTU2MTc0LCJleHAiOjE1NjA1NjMzNzQsImF6cCI6ImtpNEI2alprdUpkODdicEIyTXc4emRrajFsM29mcHpqIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6aW1hZ2VzIiwicG9zdDppbWFnZXMiXX0.ENxNT1lo_sX9rpgmGJmiu14lugmYXqb8siJwC1nPuGSb_ycK02KyS5IkA-YkhySMBcDD5IJfawPkJNmJPtUAB1wYVP8hlNsBuvLjtYxzH_VHNeXzVXWQvM7RiuPwrmWJmJN2onmZPh3bjiUZxvyAp0Yp0Rvm54SsiDjO_Dj1Qx-Az_Zjo-mY2ECfFgAo0ifnqDMIgE5YDZ3uOzMni4oEU5Ok-TrQOSwyfJyUC1KQ7ubQ-Bnbh-0Aii9UK9R4JBH7iIMva8_edQkgR4MuRXatYhsqvHsxQ2Iv5rjMmTAmjknsYWE5VYrzafRGVigbPD9A6ELEnyjADBQ9vMtSdPQe2w"
 
 
+## Auth Header
 def verify_decode_jwt(token):
+    # GET THE PUBLIC KEY FROM AUTH0
     jsonurl = urlopen(f'https://{AUTH0_DOMAIN}/.well-known/jwks.json')
     jwks = json.loads(jsonurl.read())
+
+    # GET THE DATA IN THE HEADER
     unverified_header = jwt.get_unverified_header(token)
+
+    # CHOOSE OUR KEY
     rsa_key = {}
     if 'kid' not in unverified_header:
         raise AuthError({
@@ -71,8 +52,11 @@ def verify_decode_jwt(token):
                 'n': key['n'],
                 'e': key['e']
             }
+
+    # Finally, verify!!!
     if rsa_key:
         try:
+            # USE THE KEY TO VALIDATE THE JWT
             payload = jwt.decode(
                 token,
                 rsa_key,
@@ -100,25 +84,6 @@ def verify_decode_jwt(token):
                 'description': 'Unable to parse authentication token.'
             }, 400)
     raise AuthError({
-                'code': 'invalid_header',
-                'description': 'Unable to find the appropriate key.'
-            }, 400)
-
-
-def requires_auth(f):
-    @wraps(f)
-    def wrapper(*args, **kwargs):
-        token = get_token_auth_header()
-        try:
-            payload = verify_decode_jwt(token)
-        except:
-            abort(401)
-        return f(payload, *args, **kwargs)
-
-    return wrapper
-
-@app.route('/Image')
-@requires_auth
-def headers(payload):
-    print(payload)
-    return 'Access Granted'
+        'code': 'invalid_header',
+        'description': 'Unable to find the appropriate key.'
+    }, 400)

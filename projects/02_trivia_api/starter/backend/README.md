@@ -239,10 +239,14 @@ curl -X POST -H "Content-Type: application/json" -d '{"searchTerm": "What is my 
     - quiz_category contains the id of the question category for the quiz
 
 ```bash
-    {
-        "previous_questions": [],
-        "quiz_category": {  "id": "1"}
-    }
+curl -X POST -H "Content-Type: application/json" -d '
+{"previous_questions": [],"quiz_category": {  "id": “1”}}
+’ http://127.0.0.1:5000/quizzes
+
+{
+    "previous_questions": [],
+    "quiz_category": {  "id": "1"}
+}
 - returns question to play quiz
 {
   "question": {
