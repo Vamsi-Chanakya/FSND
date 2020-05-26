@@ -5,11 +5,11 @@ from jose import jwt
 from urllib.request import urlopen
 
 
-AUTH0_DOMAIN = 'vamsichanakya.auth0.com'
+AUTH0_DOMAIN = 'dev-heuristic.auth0.com'
 ALGORITHMS = ['RS256']
-API_AUDIENCE = 'coffeeshopapi'
+API_AUDIENCE = 'coffeeshop'
 
-"""AuthError Exception"""
+
 '''
 AuthError Exception
 A standardized way to communicate auth failure modes
