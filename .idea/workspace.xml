@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdc7131f-9583-4a06-9429-f37d79443f67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/projects/04_FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS" beforeDir="false" afterPath="$PROJECT_DIR$/projects/04_FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/04_FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS/examples/flask/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/projects/04_FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS/examples/flask/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/04_FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/04_FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS/main.py" afterDir="false" />
+    <list default="true" id="bdc7131f-9583-4a06-9429-f37d79443f67" name="Default Changelist" comment="Udacity Nano Degree - FullStack Web Developer - Updated review comments">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -227,54 +225,6 @@
               <item name="FSND" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSND" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSND" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSND" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSND" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSND" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSND" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSND" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="03_coffee_shop_full_stack" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="environments" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -451,7 +401,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49878934" weight="0.3295099" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3295099" />
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49878934" weight="0.3295099" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.50121063" side_tool="true" visible="true" weight="0.46089676" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.50121063" side_tool="true" visible="true" weight="0.71324295" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
