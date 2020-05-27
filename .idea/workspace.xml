@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdc7131f-9583-4a06-9429-f37d79443f67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FSND.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FSND.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/auth/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/database/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/backend/src/database/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/frontend/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/04_FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS" beforeDir="false" afterPath="$PROJECT_DIR$/projects/04_FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/04_FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS/examples/flask/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/projects/04_FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS/examples/flask/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/04_FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/04_FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/capstone/heroku_sample/starter/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/05_capstone/heroku_sample/starter/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/capstone/heroku_sample/starter/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/05_capstone/heroku_sample/starter/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/capstone/starter/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/05_capstone/starter/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/capstone/starter/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/05_capstone/starter/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/capstone/starter/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/projects/05_capstone/starter/setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/capstone/starter/test_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/05_capstone/starter/test_app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,17 +81,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/03_coffee_shop_full_stack/starter_code/frontend/src/environments/environment.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -115,7 +92,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>paginate_questions</find>
       <find>previous_questions</find>
       <find>engine</find>
       <find>token</find>
@@ -145,6 +121,7 @@
       <find>/authorize</find>
       <find>tabs/user-page</find>
       <find>callbackURL</find>
+      <find>http://localhost:8100</find>
     </findStrings>
     <replaceStrings>
       <replace>Venue</replace>
@@ -460,9 +437,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2584746" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2584746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -475,7 +451,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49878934" weight="0.3295099" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3295099" />
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49878934" weight="0.3295099" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.50121063" side_tool="true" visible="true" weight="0.46089676" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.50121063" side_tool="true" visible="true" weight="0.46089676" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
