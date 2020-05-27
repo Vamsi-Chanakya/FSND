@@ -44,6 +44,7 @@ def get_drinks():
         'drinks': drinks_short
     }), 200
 
+
 '''
 @TODO implement endpoint
     GET /drinks-detail
@@ -70,6 +71,7 @@ def get_drinks_detail(jwt):
         'drinks': drinks_long
     }), 200
 
+
 '''
 @TODO implement endpoint
     POST /drinks
@@ -95,7 +97,6 @@ def create_drink(jwt):
 
         # Convert recipe dictionary into JSON.
         drink = Drink(title=title, recipe=json.dumps(recipe))
-
         drink.insert()
     except:
         db.session.rollback()
@@ -106,6 +107,7 @@ def create_drink(jwt):
             'drinks': drink.long()
         }), 200
         db.session.close()
+
 
 '''
 @TODO implement endpoint
@@ -149,6 +151,7 @@ def patch_drink(jwt, drink_id):
         }), 200
         db.session.close()
 
+
 '''
 @TODO implement endpoint
     DELETE /drinks/<id>
@@ -183,7 +186,7 @@ def delete_drink(jwt, drink_id):
         }), 200
         db.session.close()
 
-"""Error Handling"""
+
 '''
 Example error handling for unprocessable entity
 '''
@@ -196,6 +199,7 @@ def unprocessable(error):
         'error': 422,
         'message': 'unprocessable'
     }), 422
+
 
 '''
 @TODO implement error handlers using the @app.errorhandler(error) decorator
@@ -233,6 +237,7 @@ def internal_sever_error(error):
         'error': 500,
         'message': 'internal server error'
     }), 500
+
 
 '''
 @TODO implement error handler for 404
