@@ -3,7 +3,5 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Test/flask_setup_example/flaskr" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/projects/04_FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/projects/FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS" vcs="Git" />
   </component>
 </project>
