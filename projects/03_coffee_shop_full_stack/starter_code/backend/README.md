@@ -83,3 +83,186 @@ There are `@TODO` comments throughout the `./backend/src`. We recommend tackling
 
 1. `./src/auth/auth.py`
 2. `./src/api.py`
+
+# Post, Patch, Delete Request body and respective responses only for BARISTA Role which has read only access
+
+##Payload for Barista Role:
+```
+{
+  "iss": "https://vamsichanakya.auth0.com/",
+  "sub": "auth0|5ecd5b766c12610c84980ae1",
+  "aud": "coffeeshop",
+  "iat": 1592676036,
+  "exp": 1592683236,
+  "azp": "GaBE90m9mMs90YQY0K7UIOAyiTBarsXU",
+  "scope": "",
+  "permissions": [
+    "get:drinks-detail"
+  ]
+}
+```
+
+##Post New Drink:
+###Response:
+```
+{
+  "error": 401,
+  "message": {
+    "code": "not_authorized",
+    "description": "Permission not found."
+  },
+  "success": false
+}
+```
+
+##Patch Existing Drink:
+###Response:
+```
+{
+  "error": 401,
+  "message": {
+    "code": "not_authorized",
+    "description": "Permission not found."
+  },
+  "success": false
+}
+```
+##Delete Existing Drink:
+### Response
+```
+{
+  "error": 401,
+  "message": {
+    "code": "not_authorized",
+    "description": "Permission not found."
+  },
+  "success": false
+}
+```
+
+##Payload for Manager Role after JWT Decode :
+```
+{
+  "iss": "https://vamsichanakya.auth0.com/",
+  "sub": "auth0|5ecd5b8c6c12610c84980b5a",
+  "aud": "coffeeshop",
+  "iat": 1592675055,
+  "exp": 1592682255,
+  "azp": "GaBE90m9mMs90YQY0K7UIOAyiTBarsXU",
+  "scope": "",
+  "permissions": [
+    "delete:drinks",
+    "get:drinks-detail",
+    "patch:drinks",
+    "post:drinks"
+  ]
+}
+```
+
+##Post New Drink:
+###Request :
+```
+{
+    "title": "Vamsi8",
+    "recipe": [
+        {
+            "name": "item1",
+            "color": "yellow", 
+            "parts": 1
+        },
+        {
+        "name": "item2", 
+        "color": "black", 
+        "parts": 1
+        }
+    ]
+}
+```
+
+###Response:
+```
+{
+  "drinks": [
+    {
+      "id": 8,
+      "recipe": [
+        {
+          "color": "yellow",
+          "name": "item1",
+          "parts": 1
+        },
+        {
+          "color": "black",
+          "name": "item2",
+          "parts": 1
+        }
+      ],
+      "title": "Vamsi8"
+    }
+  ],
+  "success": true
+}
+```
+
+##Patch Existing Drink:
+###Request:
+```
+{
+    "title": "Vamsi7",
+    "recipe": [
+        {
+            "name": "item1",
+            "color": "blue", 
+            "parts": 1
+        },
+        {
+        "name": "item2", 
+        "color": "yellow", 
+        "parts": 1
+        },
+        {
+        "name": "item3", 
+        "color": "red", 
+        "parts": 1
+        }
+    ]
+}
+```
+###Response:
+```
+{
+  "drinks": [
+    {
+      "id": 7,
+      "recipe": [
+        {
+          "color": "blue",
+          "name": "item1",
+          "parts": 1
+        },
+        {
+          "color": "yellow",
+          "name": "item2",
+          "parts": 1
+        },
+        {
+          "color": "red",
+          "name": "item3",
+          "parts": 1
+        }
+      ],
+      "title": "Vamsi7"
+    }
+  ],
+  "success": true
+}
+```
+
+##Delete Drink:
+###Response:
+```
+{
+  "delete": "3",
+  "success": true
+}
+```

@@ -18,7 +18,7 @@ THIS MUST BE UNCOMMENTED ON FIRST RUN
 '''
 
 
-db_drop_and_create_all()
+#db_drop_and_create_all()
 
 
 # ROUTES
@@ -72,8 +72,8 @@ implement endpoint
     POST /drinks
     create a new row in the drinks table
     require the 'post:drinks' permission and contain the drink.long() data representation
-    returns status code 200 and json {"success": True, "drinks": drink} where drink an array containing only the newly created drink
-        or appropriate status code indicating reason for failure
+    returns status code 200 and json {"success": True, "drinks": drink} where drink an array containing only the newly 
+        created drink or appropriate status code indicating reason for failure
 '''
 
 
@@ -81,6 +81,7 @@ implement endpoint
 @requires_auth('post:drinks')
 def post_drinks(jwt):
     body = request.get_json()
+    print(body)
     if not ('title' in body and 'recipe' in body):
         abort(422)
 
@@ -109,20 +110,20 @@ implement endpoint
     respond with a 404 error if <id> is not found
     update the corresponding row for <id>
     require the 'patch:drinks' permission and contain the drink.long() data representation
-    returns status code 200 and json {"success": True, "drinks": drink} where drink an array containing only the updated drink
-        or appropriate status code indicating reason for failure
+    returns status code 200 and json {"success": True, "drinks": drink} where drink an array containing only the 
+       updated drink or appropriate status code indicating reason for failure
 '''
 
 
 @app.route('/drinks/<id>', methods=['PATCH'])
 @requires_auth('patch:drinks')
-def update_drink(jwt, drink_id):
-
-    upd_drink = Drink.query.get(drink_id)
+def update_drink(jwt, id):
+    upd_drink = Drink.query.get(id)
 
     if upd_drink:
         try:
             body = request.get_json()
+            print(body)
 
             title = body.get('title')
             recipe = body.get('recipe')
@@ -130,20 +131,20 @@ def update_drink(jwt, drink_id):
             if title:
                 upd_drink.title = title
             if recipe:
-                upd_drink.recipe = recipe
+                upd_drink.recipe = json.dumps(recipe)
 
-                upd_drink.update()
-
-        except:
-            abort(422)
-
-        finally:
+            upd_drink.update()
 
             return jsonify({
                 "success": True,
                 "drinks": [upd_drink.long()]
             }), 200
 
+        except:
+            abort(422)
+            db.session.rollback()
+
+        finally:
             db.session.close()
 
     else:
@@ -163,8 +164,8 @@ implement endpoint
 
 @app.route('/drinks/<id>', methods=['DELETE'])
 @requires_auth('delete:drinks')
-def delete_drink(jwt, drink_id):
-    del_drink = Drink.query.get(drink_id)
+def delete_drink(jwt, id):
+    del_drink = Drink.query.get(id)
 
     if del_drink:
         try:
