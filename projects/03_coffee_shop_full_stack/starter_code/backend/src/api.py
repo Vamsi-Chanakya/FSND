@@ -18,16 +18,17 @@ THIS MUST BE UNCOMMENTED ON FIRST RUN
 '''
 
 
-#db_drop_and_create_all()
+db_drop_and_create_all()
 
 
 # ROUTES
 '''
 implement endpoint
     GET /drinks
-    this is a public endpoint and contain only the drink.short() data representation
-    returns status code 200 and json {"success": True, "drinks": drinks} where drinks is the list of drinks
-        or appropriate status code indicating reason for failure
+    this is a public endpoint and contain drink.short() data representation
+    returns status code 200 and json {"success": True, "drinks": drinks}
+    where drinks is the list of drinks or appropriate status code
+    indicating reason for failure
 '''
 
 
@@ -47,9 +48,11 @@ def get_drinks():
 '''
 implement endpoint
     GET /drinks-detail
-    require the 'get:drinks-detail' permission and contain the drink.long() data representation
-    returns status code 200 and json {"success": True, "drinks": drinks} where drinks is the list of drinks
-        or appropriate status code indicating reason for failure
+    require the 'get:drinks-detail' permission and
+    contain the drink.long() data representation
+    returns status code 200 and json {"success": True, "drinks": drinks}
+    where drinks is the list of drinks
+    or appropriate status code indicating reason for failure
 '''
 
 
@@ -71,9 +74,11 @@ def get_drinks_detail(jwt):
 implement endpoint
     POST /drinks
     create a new row in the drinks table
-    require the 'post:drinks' permission and contain the drink.long() data representation
-    returns status code 200 and json {"success": True, "drinks": drink} where drink an array containing only the newly 
-        created drink or appropriate status code indicating reason for failure
+    require the 'post:drinks' permission and
+    contain the drink.long() data representation
+    returns status code 200 and json {"success": True, "drinks": drink}
+    where drink an array containing only the newly
+    created drink or appropriate status code indicating reason for failure
 '''
 
 
@@ -81,7 +86,7 @@ implement endpoint
 @requires_auth('post:drinks')
 def post_drinks(jwt):
     body = request.get_json()
-    print(body)
+
     if not ('title' in body and 'recipe' in body):
         abort(422)
 
@@ -109,9 +114,11 @@ implement endpoint
     PATCH /drinks/<id> where <id> is the existing model id
     respond with a 404 error if <id> is not found
     update the corresponding row for <id>
-    require the 'patch:drinks' permission and contain the drink.long() data representation
-    returns status code 200 and json {"success": True, "drinks": drink} where drink an array containing only the 
-       updated drink or appropriate status code indicating reason for failure
+    require the 'patch:drinks' permission and
+    contain the drink.long() data representation
+    returns status code 200 and json {"success": True, "drinks": drink}
+    where drink an array containing only the
+    updated drink or appropriate status code indicating reason for failure
 '''
 
 
@@ -156,9 +163,10 @@ implement endpoint
     DELETE /drinks/<id> where <id> is the existing model id
     respond with a 404 error if <id> is not found
     delete the corresponding row for <id>
-    require the 'delete:drinks' permission 
-    returns status code 200 and json {"success": True, "delete": id} where id is the id of the deleted record
-        or appropriate status code indicating reason for failure
+    require the 'delete:drinks' permission
+    returns status code 200 and json {"success": True, "delete": id}
+    where id is the id of the deleted record
+    or appropriate status code indicating reason for failure
 '''
 
 
@@ -205,7 +213,7 @@ def unprocessable(error):
 
 '''
 implement error handler for 404
-    error handler should conform to general task above 
+error handler should conform to general task above
 '''
 
 
@@ -220,7 +228,7 @@ def not_found(error):
 
 '''
 implement error handler for AuthError
-    error handler should conform to general task above 
+error handler should conform to general task above
 '''
 
 
