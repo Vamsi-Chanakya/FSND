@@ -130,7 +130,6 @@ def update_drink(jwt, id):
     if upd_drink:
         try:
             body = request.get_json()
-            print(body)
 
             title = body.get('title')
             recipe = body.get('recipe')
